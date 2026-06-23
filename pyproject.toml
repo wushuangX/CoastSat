@@ -1,0 +1,15 @@
+[project]
+name = "coastsat"
+version = "0.1.0"
+description = "Global shoreline mapping tool from satellite imagery"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GPL-3.0"}
+dependencies = []  # 官方依赖建议用 conda + uv 混合管理
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["coastsat*"]
+
+[tool.setuptools.package-dir]
+"" = "."
